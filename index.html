@@ -37,13 +37,13 @@
     });
   </script>
 
-<script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-  
-    ttq.load('CAF5FBRC77U9DGAS20S0');
-    ttq.page();
-  }(window, document, 'ttq');
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+      ttq.load('CAF5FBRC77U9DGAS20S0');
+      ttq.page();
+    }(window, document, 'ttq');
   </script>
 
   <style type="text/css">
@@ -76,7 +76,16 @@
               metade</b> em até 30 dias</b></h3>
 
           <!-- VSL -->
-          <div id="vid_62a794c93fa232000befd5fd" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62a794c93fa232000befd5fd" src="https://images.converteai.net/891f69c4-a079-47e3-b80b-9c01fcbd4c4e/players/62a794c93fa232000befd5fd/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62a794c93fa232000befd5fd" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62a794c93fa232000befd5fd">var s=document.createElement("script");s.src="https://scripts.converteai.net/891f69c4-a079-47e3-b80b-9c01fcbd4c4e/players/62a794c93fa232000befd5fd/player.js",s.async=!0,document.head.appendChild(s);</script>
+          <div id="vid_62a794c93fa232000befd5fd" style="position:relative;width:100%;padding: 56.25% 0 0;"><img
+              id="thumb_62a794c93fa232000befd5fd"
+              src="https://images.converteai.net/891f69c4-a079-47e3-b80b-9c01fcbd4c4e/players/62a794c93fa232000befd5fd/thumbnail.jpg"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+            <div id="backdrop_62a794c93fa232000befd5fd"
+              style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+            </div>
+          </div>
+          <script type="text/javascript"
+            id="scr_62a794c93fa232000befd5fd">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/891f69c4-a079-47e3-b80b-9c01fcbd4c4e/players/62a794c93fa232000befd5fd/player.js", s.async = !0, document.head.appendChild(s);</script>
 
           <!-- Botão -->
           <div id="cta1" class="mt-4 d-none">
@@ -454,7 +463,27 @@
 <body>
 
   <script type="text/javascript">
-    setTimeout(() => { document.getElementById("cta1").classList.remove("d-none") }, 0); // 1637000); // temporização da Call to Action (em milissegundos)
+    setTimeout(() => { document.getElementById("cta1").classList.remove("d-none") }, 840000); // 1637000); // temporização da Call to Action (em milissegundos)
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); }
+    );
+    document.onkeydown = function (e) {
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
   </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
